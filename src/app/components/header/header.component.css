@@ -1,0 +1,8 @@
+/* Barra superior (logos y redes sociales*/
+div{
+    background-color: #171718;
+}
+app-social{
+    float: right;
+    margin-top: 25px;
+}
