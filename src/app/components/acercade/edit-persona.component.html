@@ -1,1 +1,24 @@
-<p>edit-persona works!</p>
+<div class="container" *ngIf="per">
+    <div class="row">
+        <div>
+            <form (ngSubmit)="onUpdatePersona()" novalidate #f="ngForm">
+                <div class="form-group">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" class="form-control" id="nombre" name="nombre" [(ngModel)]="per.nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="apellido">Apellido</label>
+                    <input type="text" class="form-control" id="apellido" name="apellido" [(ngModel)]="per.apellido" required>
+                </div>
+                <div class="form-group">
+                    <label for="descripcion">Cuenta un poco acerca de tí</label>
+                    <input type="text" class="form-control" id="descripcion" name="descripcion" [(ngModel)]="per.descripcion" required>
+                </div>
+
+                <button class="btn btn-primary">
+                    Actualizar
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
