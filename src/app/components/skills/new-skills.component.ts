@@ -13,7 +13,7 @@ export class NewSkillsComponent implements OnInit {
     nombreS!: string;
     progress!: number;
 
-  constructor(private sSkill: SSkillService, private router: Router) { }
+  constructor(public sSkill: SSkillService, private router: Router) { }
 
   ngOnInit(): void {}
 

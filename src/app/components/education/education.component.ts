@@ -12,7 +12,7 @@ export class EducationComponent implements OnInit {edu: Educacion[] = [];
 
   educacion: Educacion[] = [];
 
-  constructor(private sEducacion: SEducacionService, private tokenService: TokenService) { }
+  constructor(public sEducacion: SEducacionService, private tokenService: TokenService) { }
   isLogged = false;
 
   ngOnInit(): void {

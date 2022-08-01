@@ -1,20 +1,18 @@
 <div class="row">
+<!--<div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+        <img src="../../.." class="img-fluid" id="fotoperfil">
+    </div>-->
     <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
-        <img src="{{persona.img}}" class="img-fluid" id="fotoperfil">
-    </div>
-    <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
-        <p id="nombre">{{persona.nombre}} {{persona.apellido}}</p>
+        <p id="nombre">Francisco Castellano</p>
         <p>Full Stack Developer Junior</p>
     </div>
     <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
         <span>
             <h1>Acerca de mí</h1>
             <p id="acerca">
-                {{persona.descripcion}}
+                Soy un estudiante de Ingeniería Biomédica de 4to año y me estoy insertando en el universo de la programación
             </p>
         </span>
     </div>
-    <div *ngIf="isLogged">
-        <button type="button" class="btn btn-primary" routerLink="/editpersona/{{persona.id}}"><i class="bi bi-pencil-square">Editar Perfil</i></button>
-    </div>
+    
 </div>

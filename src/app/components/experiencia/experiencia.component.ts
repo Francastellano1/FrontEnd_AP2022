@@ -11,7 +11,7 @@ import { TokenService } from 'src/app/service/token.service';
 export class ExperienciaComponent implements OnInit {
   exp: Experiencia[] = [];
 
-  constructor(private sExperiencia: SExperienciaService, private tokenService: TokenService) { }
+  constructor(public sExperiencia: SExperienciaService, private tokenService: TokenService) { }
 
   isLogged = false;
 

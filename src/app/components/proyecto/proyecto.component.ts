@@ -12,7 +12,7 @@ export class ProyectoComponent implements OnInit {
 
   proyecto: Proyecto[] = [];
 
-  constructor(private sProyecto: SProyectoService, private tokenService: TokenService) { }
+  constructor(public sProyecto: SProyectoService, private tokenService: TokenService) { }
 
   isLogged = false;  
 
