@@ -8,7 +8,7 @@ import { Persona } from '../model/persona.model';
 })
 export class PersonaService {
   /* Llamo a estos archivos del back end desde el front creando una variable URL */
-  URL = 'http://localhost:8080/personas/';
+  URL = 'https://castellanoap.herokuapp.com/personas/';
 
   /* Creame una variable private http que responda al http client */
   constructor(private http: HttpClient) { }
